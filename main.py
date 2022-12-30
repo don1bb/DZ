@@ -40,8 +40,8 @@ class Human2(Human):
         while True:
             Human2.aldik(self)
     def aldik(self):
-        print(f'1-возраст\n'
-              f'2-имя\n'
+        print(f'1-имя\n'
+              f'2-возраст\n'
               f'3-дата рождения\n'
               f'4-машина\n'
               f'5-ориентация\n'
@@ -57,5 +57,11 @@ class Human2(Human):
             Human2.car(self)
         elif a == 5:
             Human2.__orientation(self)
+        elif a == 6:
+            exit()
+    def count_methods(self):
+            print(len(dir(self)))
+
+
 w = Human2('Mirdjalalydin', 23)
 w.wh()
